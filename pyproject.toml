@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "control-systems"
+version = "0.1.0"
+description = ""
+authors = ["James Goppert <james.goppert@gmail.com>"]
+license = "Apache 2.0"
+readme = "README.md"
+packages = [{include = "control_systems"}]
+
+[tool.poetry.dependencies]
+python = "^3.10,<3.12"
+matplotlib = "^3.7.0"
+numpy = "^1.24.2"
+scipy = "^1.10.1"
+control = {version = "^0.9.3.post2", allow-prereleases = true}
+
+
+[tool.poetry.group.dev.dependencies]
+jupyterlab = "^3.6.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
