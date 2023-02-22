@@ -1,0 +1,9 @@
+name: control-systems
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - matplotlib
+  - numpy
+  - scipy
+  - sympy
